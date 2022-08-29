@@ -1,0 +1,47 @@
+.Image {
+    width: 900px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+}
+body
+{
+background: url(levels/1.jpg);
+backdrop-filter: blur(10px);
+}
+h1 {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.levelInput
+{
+    background: transparent;
+    border-style: solid;
+    border-color: white;
+    height: 40px;
+    width:605px;
+    display: block;
+color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.press
+{
+    background: transparent;
+    border-style: solid;
+    height: 30px;
+    width:300px;
+    color: white;
+    border-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+span
+{
+font-family: arial;
+color: rgba(0, 0, 0, 0.5);
+}
