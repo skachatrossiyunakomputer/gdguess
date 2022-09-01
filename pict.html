@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Угадайка по названию</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body id='nm'>
+    <select name="mode" id="mode">
+        <option value="selecting" disabled>Выбор режима</option>
+        <option value="guesser">Угадай уровень по картинке</option>
+        <option value="naming" disabled selected>Угадай уровень по названию</option>
+        <option value="music">Угадай уровень по музыке</option>
+    </select>
+    <input type="button" value="Выбрать" onclick="sl()"></input>
+    
+<div class="bck">
+    <h1 class="whatguess" id="whatguess">Undefined</h1>
+    <img src="" id="img1" width="350" onclick="checkv(1)" class="huy">
+    <img src="" id="img2" width="350" onclick="checkv(2)" class="huy">
+    <img src="" id="img3" width="350" onclick="checkv(3)" class="huy">
+    <img src="" id="img4" width="350" onclick="checkv(4)" class="huy">
+    <script type="text/javascript" src="script.js"></script>
+</div>
+    <span><a href="https://github.com/gmddurachok" target="_blank">Создатель</a></span>
+</body>
+</html>
