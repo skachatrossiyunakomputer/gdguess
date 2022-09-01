@@ -1,13 +1,18 @@
-
 <html>
 <head>
-    <title>Угадайка уровней GD</title>
+    <title>Угадайка уровней</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="style.css" rel="stylesheet">
 </head>
 <body id='ch'>
-
+    <select name="mode" id="mode">
+        <option value="selecting" disabled>Выбор режима</option>
+        <option value="guesser" disabled selected>Угадай уровень по картинке</option>
+        <option value="naming">Угадай уровень по названию</option>
+        <option value="music">Угадай уровень по музыке</option>
+    </select>
+    <input type="button" value="Выбрать" onclick="sl()"></input>
     <img src="" id="level" class="Image">
 <div class="bck">
     <input type="text" id="levelInput" class="levelInput" value="" placeholder="Enter для ввода">
