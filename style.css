@@ -1,16 +1,25 @@
 .Image {
-    width: 900px;
-    height: 500px;
+    width: 890px;
+    height: 490px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
     border-width: 5px;
 }
+.selectable
+{
+    position: absolute;
+}
+.mode {
+    position: absolute;
+}
 body
 {
-background: url(lvls/1.jpg);
-backdrop-filter: blur(10px);
+    background: url(lvls/1.jpg);
+    background-size: 3000px 2000px;
+    backdrop-filter: saturate(0), blur(5);
+    filter:blur(0px);
 }
 h1 {
     color:white;
@@ -24,7 +33,7 @@ h1 {
     height: 40px;
     width:605px;
     display: block;
-color: white;
+    color: white;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,6 +51,27 @@ color: white;
 }
 span
 {
-font-family: arial;
-color: rgba(0, 0, 0, 0.5);
+    font-family: arial;
+    color: rgba(0, 0, 0, 0.5);
+}
+.whatguess 
+{
+    text-align:center;
+}
+
+.img1
+{
+    cursor: pointer;
+}
+.img2
+{
+    cursor: pointer;
+}
+.img3
+{
+    cursor: pointer;
+}
+.img4
+{
+    cursor: pointer;
 }
