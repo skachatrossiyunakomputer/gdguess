@@ -1,5 +1,6 @@
  //ВНИМАНИЕ! МНОГО ГОВНОКОДА. ИСПРАВЛЮ ПОЗЖЕ!
  //WARNING! A LOT OF SHITCODE. FIX LATER!
+ dir = "lvls/"
  function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -41,8 +42,8 @@
      rnd = Math.floor(Math.random() * levelNames.length);
  }
  randomize();
- img.src = "levels/"+rnd+".jpg";
- document.getElementById('ch').style.background = "url(levels/"+rnd+".jpg)";
+ img.src = dir+rnd+".jpg";
+ document.getElementById('ch').style.background = "url("+dir+rnd+".jpg)";
  
  function check()
  {
@@ -54,8 +55,8 @@
          console.log("+1, "+count)
          document.getElementById("levelInput").placeholder = "Правильных ответов: "+count;
          randomize();
-         img.src = "levels/"+rnd+".jpg";
- 	 document.getElementById('ch').style.background = "url(levels/"+rnd+".jpg)";
+         img.src = dir+rnd+".jpg";
+ 	 document.getElementById('ch').style.background = "url("+dir+rnd+".jpg)";
      }
      else 
      {
@@ -77,7 +78,7 @@
          alert("Это "+levelNames[rnd])
          console.log("-1, "+count)
          randomize();
-         img.src = "levels/"+rnd+".jpg";
+         img.src = dir+rnd+".jpg";
      }
  }
  document.getElementById("levelInput").addEventListener('keydown', function(e) {
@@ -118,29 +119,29 @@ if(document.title == "Угадайка по названию")
         txt.innerHTML = levelNames[rnd1];
     if(correctImg == 1)
     {
-        document.getElementById('img2').src = "levels/"+rnd2+".jpg";
-        document.getElementById('img3').src = "levels/"+rnd3+".jpg";
-        document.getElementById('img4').src = "levels/"+rnd4+".jpg";
+        document.getElementById('img2').src = dir+rnd2+".jpg";
+        document.getElementById('img3').src = dir+rnd3+".jpg";
+        document.getElementById('img4').src = dir+rnd4+".jpg";
     }
     if(correctImg == 2)
     {
-        document.getElementById('img1').src = "levels/"+rnd2+".jpg";
-        document.getElementById('img3').src = "levels/"+rnd3+".jpg";
-        document.getElementById('img4').src = "levels/"+rnd4+".jpg";
+        document.getElementById('img1').src = dir+rnd2+".jpg";
+        document.getElementById('img3').src = dir+rnd3+".jpg";
+        document.getElementById('img4').src = dir+rnd4+".jpg";
     }
     if(correctImg == 3)
     {
-        document.getElementById('img1').src = "levels/"+rnd2+".jpg";
-        document.getElementById('img2').src = "levels/"+rnd3+".jpg";
-        document.getElementById('img4').src = "levels/"+rnd4+".jpg";
+        document.getElementById('img1').src = dir+rnd2+".jpg";
+        document.getElementById('img2').src = dir+rnd3+".jpg";
+        document.getElementById('img4').src = dir+rnd4+".jpg";
     }
     if(correctImg == 4)
     {
-        document.getElementById('img1').src = "levels/"+rnd2+".jpg";
-        document.getElementById('img2').src = "levels/"+rnd3+".jpg";
-        document.getElementById('img3').src = "levels/"+rnd4+".jpg";
+        document.getElementById('img1').src = dir+rnd2+".jpg";
+        document.getElementById('img2').src = dir+rnd3+".jpg";
+        document.getElementById('img3').src = dir+rnd4+".jpg";
     }
-    document.getElementById('img'+correctImg).src = "levels/"+rnd1+".jpg";
+    document.getElementById('img'+correctImg).src = dir+rnd1+".jpg";
     
     }
     next();
