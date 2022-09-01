@@ -3,24 +3,29 @@
     <title>Угадайка по названию</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="array.js" type="module"></script>
+    <script type="text/javascript" src="relocate.js"></script>
 </head>
-<body id='nm'>
-    <select name="mode" id="mode">
-        <option value="selecting" disabled>Выбор режима</option>
-        <option value="guesser">Угадай уровень по картинке</option>
-        <option value="naming" disabled selected>Угадай уровень по названию</option>
-        <option value="music">Угадай уровень по музыке</option>
-    </select>
-    <input type="button" value="Выбрать" onclick="sl()"></input>
+<body id='background'>
+    <div class="selectable">
+        <select id="mode">
+            <option value="selectMode" disabled>Выбор режима</option>
+            <option value="pictureGuess">Угадай уровень по картинке</option>
+            <option value="nameGuess" disabled selected>Угадай уровень по названию</option>
+            <option value="musicGuess">Угадай уровень по музыке</option>
+        </select>
+        <input type="button" value="Выбрать" onclick="relocate()"></input>
+    </div>
     
-<div class="bck">
     <h1 class="whatguess" id="whatguess">Undefined</h1>
-    <img src="" id="img1" width="350" onclick="checkv(1)" class="huy">
-    <img src="" id="img2" width="350" onclick="checkv(2)" class="huy">
-    <img src="" id="img3" width="350" onclick="checkv(3)" class="huy">
-    <img src="" id="img4" width="350" onclick="checkv(4)" class="huy">
-    <script type="text/javascript" src="script.js"></script>
-</div>
-    <span><a href="https://github.com/gmddurachok" target="_blank">Создатель</a></span>
+    <div class="images">
+    <img src="lvls/10000.jpg" id="img1" class="img1" width="315" onclick="checkVariant(1)">
+    <img src="lvls/10000.jpg" id="img2" class="img2" width="315" onclick="checkVariant(2)">
+    <img src="lvls/10000.jpg" id="img3" class="img3" width="315" onclick="checkVariant(3)">
+    <img src="lvls/10000.jpg" id="img4" class="img4" width="315" onclick="checkVariant(4)">
+    </div>
+    <h1 class="whatguess" id="counter">счёт: 10</h1>
+    <script type="text/javascript" src="nameGuess.js"></script>
+    <span><a href="https://github.com/gmddurachok" target="_blank">gmddurachok</a> Версия 1.2</span>
 </body>
 </html>
