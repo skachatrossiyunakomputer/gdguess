@@ -1,98 +1,49 @@
- //ЧЁ СМОТРИШЬ?
+ //ВНИМАНИЕ! МНОГО ГОВНОКОДА. ИСПРАВЛЮ ПОЗЖЕ!
+ //WARNING! A LOT OF SHITCODE. FIX LATER!
+ function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+ let levelNames = [
+    "stereo madness",
+    "back on track",
+    "polargeist",
+    "dry out",
+    "base after base",
+    "can't let go",
+    "jumper",
+    "time machine",
+    "cycles",
+    "xstep",
+    "clutterfunk",
+    "theory of everything",
+    "electroman adventures",
+    "clubstep",
+    "electrodynamix",
+    "hexagon force",
+    "blast processing",
+    "theory of everything 2",
+    "geometrical dominator",
+    "deadlocked",
+    "fingerdash",
+    "retray"
+]
+ if (document.title == "Угадайка уровней")
+ {
  let lineValue = document.getElementById("levelInput").value;
  img = document.getElementById("level");
  let count = 0;
  let rnd = 0;
- let levelNames = [
-"stereo madness",
-"stereo madness",
-"back on track",
-"back on track",
-"polargeist",
-"polargeist",
-"dry out",
-"dry out",
-"dry out",
-"base after base",
-"base after base",
-"can't let go",
-"can't let go",
-"can't let go",
-"jumper",
-"jumper",
-"time machine",
-"time machine",
-"time machine",
-"cycles",
-"cycles",
-"cycles",
-"xstep",
-"xstep",
-"clutterfunk",
-"clutterfunk",
-"clutterfunk",
-"theory of everything",
-"theory of everything",
-"theory of everything",
-"theory of everything",
-"theory of everything",
-"electroman adventures",
-"electroman adventures",
-"electroman adventures",
-"electroman adventures",
-"electroman adventures",
-"clubstep",
-"clubstep",
-"clubstep",
-"electrodynamix",
-"electrodynamix",
-"electrodynamix",
-"electrodynamix",
-"hexagon force",
-"hexagon force",
-"hexagon force",
-"hexagon force",
-"blast processing",
-"blast processing",
-"blast processing",
-"blast processing",
-"blast processing",
-"theory of everything 2",
-"theory of everything 2",
-"theory of everything 2",
-"theory of everything 2",
-"geometrical dominator",
-"geometrical dominator",
-"geometrical dominator",
-"deadlocked",
-"deadlocked",
-"deadlocked",
-"deadlocked",
-"deadlocked",
-"fingerdash",
-"fingerdash",
-"fingerdash",
-"fingerdash",
-"retray",
-"retray",
-"retray",
-"retray",
-"the nightmare",
-"the nightmare",
-"the nightmare",
-"dark paradise",
-"dark paradise",
-"outerspace",
-"outerspace",
-]
- let max = levelNames.length;
+
  function randomize()
  {
-     rnd = Math.floor(Math.random() * max);
+     rnd = Math.floor(Math.random() * levelNames.length);
  }
  randomize();
  img.src = "levels/"+rnd+".jpg";
  document.getElementById('ch').style.background = "url(levels/"+rnd+".jpg)";
+ 
  function check()
  {
      lineValue = document.getElementById("levelInput").value;
@@ -134,3 +85,79 @@
       check()
     }
   });
+}
+ function sl()
+ {
+    let a = document.getElementById("mode").value;
+    if (a == "guesser") {
+        window.location.replace("index.html");
+    }
+    if (a == "naming") {
+        window.location.replace("pict.html");
+    }
+    if (a == "music") {
+        window.location.replace("music.html");
+    }
+ }
+if(document.title == "Угадайка по названию")
+{
+    let txt = document.getElementById('whatguess');
+    let rnd1, rnd2, rnd3, rnd4, correctImg;
+    function next()
+    {
+        rnd1 = getRandomInt(0, levelNames.length-1);
+        rnd2 = getRandomInt(0, levelNames.length-1);
+        rnd3 = getRandomInt(0, levelNames.length-1);
+        rnd4 = getRandomInt(0, levelNames.length-1);
+        correctImg = getRandomInt(1, 4);
+        console.log(correctImg)
+        if(rnd1 == rnd2 || rnd1 == rnd3 || rnd1 == rnd4 || rnd2 == rnd1 || rnd2 == rnd3 || rnd2 == rnd4 || rnd3 == rnd1 || rnd3 == rnd2 || rnd3 == rnd4 || rnd4 == rnd1 || rnd4 == rnd2 || rnd4 == rnd3)
+        {
+            next()
+        }
+        txt.innerHTML = levelNames[rnd1];
+    if(correctImg == 1)
+    {
+        document.getElementById('img2').src = "levels/"+rnd2+".jpg";
+        document.getElementById('img3').src = "levels/"+rnd3+".jpg";
+        document.getElementById('img4').src = "levels/"+rnd4+".jpg";
+    }
+    if(correctImg == 2)
+    {
+        document.getElementById('img1').src = "levels/"+rnd2+".jpg";
+        document.getElementById('img3').src = "levels/"+rnd3+".jpg";
+        document.getElementById('img4').src = "levels/"+rnd4+".jpg";
+    }
+    if(correctImg == 3)
+    {
+        document.getElementById('img1').src = "levels/"+rnd2+".jpg";
+        document.getElementById('img2').src = "levels/"+rnd3+".jpg";
+        document.getElementById('img4').src = "levels/"+rnd4+".jpg";
+    }
+    if(correctImg == 4)
+    {
+        document.getElementById('img1').src = "levels/"+rnd2+".jpg";
+        document.getElementById('img2').src = "levels/"+rnd3+".jpg";
+        document.getElementById('img3').src = "levels/"+rnd4+".jpg";
+    }
+    document.getElementById('img'+correctImg).src = "levels/"+rnd1+".jpg";
+    
+    }
+    next();
+function checkv(variant)
+{
+    if(variant == correctImg)
+    {
+        next();
+    }
+    else 
+ {
+    alert("Неправильно")
+ }
+}
+}
+
+if (document.title == "Угадайка по музыке")
+{
+    console.log("huy")
+}
