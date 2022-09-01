@@ -2,23 +2,26 @@
 <head>
     <title>Угадайка уровней</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script type="text/javascript" src="array.js" type="module"></script>
+    <script type="text/javascript" src="relocate.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
-<body id='ch'>
-    <select name="mode" id="mode">
-        <option value="selecting" disabled>Выбор режима</option>
-        <option value="guesser" disabled selected>Угадай уровень по картинке</option>
-        <option value="naming">Угадай уровень по названию</option>
-        <option value="music">Угадай уровень по музыке</option>
-    </select>
-    <input type="button" value="Выбрать" onclick="sl()"></input>
-    <img src="" id="level" class="Image">
-<div class="bck">
+<body id="background">
+
+    <div class="selectable">
+        <select id="mode">
+            <option value="selectMode" disabled>Выбор режима</option>
+            <option value="pictureGuess" disabled selected>Угадай уровень по картинке</option>
+            <option value="nameGuess">Угадай уровень по названию</option>
+            <option value="musicGuess">Угадай уровень по музыке</option>
+        </select>
+        <input type="button" value="Выбрать" onclick="relocate()"></input>
+    </div>
+    
+    <img src="lvls/10000.jpg" id="levelImage" class="Image">
     <input type="text" id="levelInput" class="levelInput" value="" placeholder="Enter для ввода">
-</div>
     <input type="button" class="press" value="Пропуск" onclick="skip()"></input>
-    <script type="text/javascript" src="script.js"></script>
-    <span><a href="https://github.com/gmddurachok" target="_blank">Создатель</a></span>
+    <script type="text/javascript" src="pictureGuess.js"></script>
+    <span><a href="https://github.com/gmddurachok" target="_blank">gmddurachok</a> Версия 1.2</span>
 </body>
 </html>
