@@ -133,3 +133,14 @@ function skip()
         }
     }
 }
+window.onresize = function(){
+    document.getElementById("levelInput").style.fontSize = document.documentElement.clientHeight/30+"px";
+    document.getElementById("levelInput").style.borderRadius = document.documentElement.clientWidth/200+"px";
+    document.getElementById("levelInput").style.borderWidth = document.documentElement.clientWidth/500+"px";
+    document.getElementById("press").style.fontSize = document.documentElement.clientHeight/30+"px";
+    document.getElementById("press").style.borderRadius = document.documentElement.clientWidth/200+"px";
+    document.getElementById("press").style.borderWidth = document.documentElement.clientWidth/500+"px";
+    document.getElementById("diff").style.fontSize = document.documentElement.clientHeight/30+"px";
+    document.getElementById("diff").style.borderRadius = document.documentElement.clientWidth/200+"px";
+    document.getElementById("diff").style.borderWidth = document.documentElement.clientWidth/500+"px";
+}
