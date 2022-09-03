@@ -1,27 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <title>Угадайка уровней</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="array.js" type="module"></script>
-    <script type="text/javascript" src="relocate.js"></script>
+    <link rel="icon" type="image/png" href="easy.png" id="fav" />
+    <script type="text/javascript" src="array.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
-<body id="background">
-
+<body id="background" class="bg">
     <div class="selectable">
-        <select id="mode">
+        <select id="mode" class="mode">
             <option value="selectMode" disabled>Выбор режима</option>
-            <option value="pictureGuess" disabled selected>Угадай уровень по картинке</option>
+            <option value="pictureGuess" selected>Угадай уровень по картинке</option>
             <option value="nameGuess">Угадай уровень по названию</option>
             <option value="musicGuess">Угадай уровень по музыке</option>
         </select>
-        <input type="button" value="Выбрать" onclick="relocate()"></input>
     </div>
-    
-    <img src="lvls/10000.jpg" id="levelImage" class="Image">
-    <input type="text" id="levelInput" class="levelInput" value="" placeholder="Enter для ввода">
-    <input type="button" class="press" value="Пропуск" onclick="skip()"></input>
-    <script type="text/javascript" src="pictureGuess.js"></script>
-    <span><a href="https://github.com/gmddurachok" target="_blank">gmddurachok</a> Версия 1.2</span>
+    <iframe src="name.html" frameborder="0" class="fram" id="fram" scrolling="no"></iframe>
+    <script type="text/javascript" src="relocate.js"></script>
+    <span><a href="https://github.com/gmddurachok/gdguess" target="_blank" style="text-decoration: none;">GitHub</a> Версия 1.2</span>
 </body>
 </html>
