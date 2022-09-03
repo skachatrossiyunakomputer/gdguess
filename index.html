@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="easy.png" id="fav" />
     <script type="text/javascript" src="array.js"></script>
+
     <link href="style.css" rel="stylesheet">
 </head>
 <body id="background" class="bg">
     <div class="selectable">
-        <select id="mode" class="mode">
+        <select id="mode">
             <option value="selectMode" disabled>Выбор режима</option>
             <option value="pictureGuess" selected>Угадай уровень по картинке</option>
             <option value="nameGuess">Угадай уровень по названию</option>
             <option value="musicGuess">Угадай уровень по музыке</option>
         </select>
     </div>
-    <iframe src="name.html" frameborder="0" class="fram" id="fram" scrolling="no"></iframe>
+    <iframe src="name.html" frameborder="0" id="fram" scrolling="no"></iframe>
+    <script type="text/javascript">
+        window.onresize = function(){
+            document.getElementById("mode").style.fontSize = document.documentElement.clientHeight/40+"px";
+            document.getElementById("mode").style.borderRadius = document.documentElement.clientWidth/200+"px";
+            document.getElementById("mode").style.borderWidth = document.documentElement.clientWidth/500+"px";
+            document.getElementById("fram").style.height = document.documentElement.clientHeight+"px";
+            document.getElementById("fram").style.width = document.documentElement.clientWidth+"px";
+        }
+    </script>
     <script type="text/javascript" src="relocate.js"></script>
-    <span><a href="https://github.com/gmddurachok/gdguess" target="_blank" style="text-decoration: none;">GitHub</a> Версия 1.2</span>
 </body>
 </html>
