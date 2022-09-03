@@ -1,31 +1,22 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Угадайка по названию</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="array.js" type="module"></script>
-    <script type="text/javascript" src="relocate.js"></script>
 </head>
-<body id='background'>
-    <div class="selectable">
-        <select id="mode">
-            <option value="selectMode" disabled>Выбор режима</option>
-            <option value="pictureGuess">Угадай уровень по картинке</option>
-            <option value="nameGuess" disabled selected>Угадай уровень по названию</option>
-            <option value="musicGuess">Угадай уровень по музыке</option>
-        </select>
-        <input type="button" value="Выбрать" onclick="relocate()"></input>
-    </div>
-    
+<body>
     <h1 class="whatguess" id="whatguess">Undefined</h1>
     <div class="images">
-    <img src="lvls/10000.jpg" id="img1" class="img1" width="315" onclick="checkVariant(1)">
-    <img src="lvls/10000.jpg" id="img2" class="img2" width="315" onclick="checkVariant(2)">
-    <img src="lvls/10000.jpg" id="img3" class="img3" width="315" onclick="checkVariant(3)">
-    <img src="lvls/10000.jpg" id="img4" class="img4" width="315" onclick="checkVariant(4)">
+        <div>
+            <img src="lvls/10000.jpg" id="img1" class="img1" width="311" onclick="checkVariant(1)">
+            <img src="lvls/10000.jpg" id="img2" class="img2" width="311" onclick="checkVariant(2)">
+        </div>
+        <div>
+            <img src="lvls/10000.jpg" id="img3" class="img3" width="311" onclick="checkVariant(3)">
+            <img src="lvls/10000.jpg" id="img4" class="img4" width="311" onclick="checkVariant(4)">
+        </div>
     </div>
-    <h1 class="whatguess" id="counter">счёт: 10</h1>
+    <script type="text/javascript" src="array.js" type="module"></script>
     <script type="text/javascript" src="nameGuess.js"></script>
-    <span><a href="https://github.com/gmddurachok" target="_blank">gmddurachok</a> Версия 1.2</span>
 </body>
 </html>
