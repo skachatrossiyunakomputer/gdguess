@@ -6,72 +6,157 @@
     margin-right: auto;
     border-style: solid;
     border-width: 5px;
+    box-shadow: inset 0 0 6px;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+    pointer-events: none;
+    user-select: none; 
 }
-.selectable
+.images
 {
-    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(32, 32, 32);
 }
 .mode {
     position: absolute;
+    outline:none;
+    background: rgba(32, 32, 32, 0.5);
+    border-style: solid;
+    color: white;
+    width:230px;
+    height: 30px;
+    font-size: 15px;
+    border-width: 2px;
+    border-color: rgb(71, 71, 71);
+    border-radius: 6px;
 }
-body
+.bg
 {
-    background: url(lvls/1.jpg);
-    background-size: 3000px 2000px;
-    backdrop-filter: saturate(0), blur(5);
-    filter:blur(0px);
+    background: url(gd.jpg);
+    background-size: 1000px 700px;
 }
 h1 {
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .levelInput
 {
-    background: transparent;
+    background: rgba(32, 32, 32, 0.5);
     border-style: solid;
-    border-color: white;
+    border-color: rgb(71, 71, 71);
     height: 40px;
+    box-shadow: inset 0 0 10px black;
     width:605px;
+    font-size:17px; 
     display: block;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 6px;
+    outline:none;
 }
 .press
 {
-    background: transparent;
+    background: rgba(32, 32, 32, 0.5);
     border-style: solid;
-    height: 30px;
-    width:300px;
+    border-color: rgb(71, 71, 71);
+    height: 40px;
+    box-shadow: inset 0 0 10px black;
+    width:310px;
+    font-size:17px;
+    border-radius: 6px;
     color: white;
-    border-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+.fram
+{
+    width:99vw;
+    height:95vh;
+}
+#songInput
+{
+    background: rgba(32, 32, 32, 0.5);
+    border-style: solid;
+    border-radius: 6px;
+    color: white;
+    border-color: rgb(71, 71, 71);
+    outline:none;
+    width: 200px;
+    height:23px;
 }
 span
 {
+    bottom:100%;
     font-family: arial;
+    float:left;
+    text-shadow: 1px 2px 1px rgb(252, 252, 252);
     color: rgba(0, 0, 0, 0.5);
 }
 .whatguess 
 {
-    text-align:center;
+    text-align: center;
 }
-
+#playbut
+{
+    width:30px;
+    height:30px;
+    background: rgb(32, 32, 32);
+    border-style: solid;
+    border-radius: 6px;
+    color: white;
+    border-color: rgb(71, 71, 71);
+    outline:none;
+}
 .img1
 {
+    border-style: solid;
+    border-color: rgb(71, 71, 71);
+    box-shadow: 0 0 10px black;
     cursor: pointer;
+    user-select: none; 
 }
 .img2
 {
+    border-style: solid;
+    border-color: rgb(71, 71, 71);
+    box-shadow: 0 0 10px black;
     cursor: pointer;
+    user-select: none; 
 }
 .img3
 {
+    border-style: solid;
+    border-color: rgb(71, 71, 71);
+    box-shadow: 0 0 10px black;
     cursor: pointer;
+    user-select: none; 
 }
 .img4
 {
+    border-style: solid;
+    border-color: rgb(71, 71, 71);
+    box-shadow: 0 0 10px black;
     cursor: pointer;
+    user-select: none; 
+}
+.difficulity
+{
+    border-radius: 6px;
+    background: rgba(32, 32, 32, 0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(71, 71, 71);
+    height: 40px;
+    box-shadow: inset 0 0 10px black;
+    width: 303px;
+    font-size:17px;
+    text-align: center;
+    color: white;
+    outline: none;
+}
+.inlin
+{
+    display: flex;
+    justify-content: center;
 }
