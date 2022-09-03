@@ -1,26 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Угадайка по музыке</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="array.js" type="module"></script>
-    <script type="text/javascript" src="relocate.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body id='background'>
-
-        <select id="mode">
-            <option value="selectMode" disabled>Выбор режима</option>
-            <option value="pictureGuess">Угадай уровень по картинке</option>
-            <option value="nameGuess">Угадай уровень по названию</option>
-            <option value="musicGuess" disabled selected>Угадай уровень по музыке</option>
-        </select>
-        <input type="button" value="Выбрать" onclick="relocate()"></input>
+    <audio src="" id="songs"> </audio>
     <br>
     <br>
-    <audio controls src="" id="songs"> </audio>
-    <br>
-    <br>
-    <input type="text" id="songInput" value="" placeholder="Enter для ввода"></input>
+    <button onclick="play()" id="playbut">▶</button>
+    <input  onclick="check()" type="text" id="songInput" value="" placeholder="Из какого уровня эта музыка?"></input>
     <script src="music.js"></script>
 </body>
 </html>
