@@ -1,30 +1,27 @@
-.Image {
-    width: 890px;
-    height: 490px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 5px;
+#levelImage {
+    width: 60vw;
+    height: 90vh;
     box-shadow: inset 0 0 6px;
     box-shadow: 0 0 5px 2px rgb(0, 0, 0);
     pointer-events: none;
     user-select: none; 
+    height: 100%;
+
 }
 .images
 {
-    width: 50%;
-    margin: 0 auto;
     background-color: rgb(32, 32, 32);
 }
-.mode {
-    position: absolute;
+#mode {
     outline:none;
     background: rgba(32, 32, 32, 0.5);
     border-style: solid;
+    position:absolute;
+    bottom: 94%;
+    right: 80%;
+    width: 20vw;
+    height: 5vh;
     color: white;
-    width:230px;
-    height: 30px;
     font-size: 15px;
     border-width: 2px;
     border-color: rgb(71, 71, 71);
@@ -33,46 +30,45 @@
 .bg
 {
     background: url(gd.jpg);
-    background-size: 1000px 700px;
+    background-size: 100% 100%;
+    overflow-y:auto;
+    overflow: hidden;
 }
 h1 {
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.levelInput
+#levelInput
 {
     background: rgba(32, 32, 32, 0.5);
     border-style: solid;
     border-color: rgb(71, 71, 71);
-    height: 40px;
+    height: 7vh;
     box-shadow: inset 0 0 10px black;
-    width:605px;
+    width:50vw;
     font-size:17px; 
-    display: block;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 6px;
     outline:none;
 }
-.press
+#press
 {
     background: rgba(32, 32, 32, 0.5);
     border-style: solid;
     border-color: rgb(71, 71, 71);
-    height: 40px;
+    height: 6vh;
     box-shadow: inset 0 0 10px black;
-    width:310px;
+    width: 23vw;
     font-size:17px;
     border-radius: 6px;
     color: white;
 }
-.fram
+#fram
 {
-    width:99vw;
-    height:95vh;
+    width:100%;
+    height:100vh;
 }
 #songInput
 {
@@ -93,7 +89,7 @@ span
     text-shadow: 1px 2px 1px rgb(252, 252, 252);
     color: rgba(0, 0, 0, 0.5);
 }
-.whatguess 
+#whatguess 
 {
     text-align: center;
 }
@@ -108,7 +104,7 @@ span
     border-color: rgb(71, 71, 71);
     outline:none;
 }
-.img1
+#img1
 {
     border-style: solid;
     border-color: rgb(71, 71, 71);
@@ -116,7 +112,7 @@ span
     cursor: pointer;
     user-select: none; 
 }
-.img2
+#img2
 {
     border-style: solid;
     border-color: rgb(71, 71, 71);
@@ -124,7 +120,7 @@ span
     cursor: pointer;
     user-select: none; 
 }
-.img3
+#img3
 {
     border-style: solid;
     border-color: rgb(71, 71, 71);
@@ -132,7 +128,7 @@ span
     cursor: pointer;
     user-select: none; 
 }
-.img4
+#img4
 {
     border-style: solid;
     border-color: rgb(71, 71, 71);
@@ -140,23 +136,22 @@ span
     cursor: pointer;
     user-select: none; 
 }
-.difficulity
+#diff
 {
     border-radius: 6px;
     background: rgba(32, 32, 32, 0.5);
     border-style: solid;
     border-width: 2px;
     border-color: rgb(71, 71, 71);
-    height: 40px;
+    height: 6vh;
     box-shadow: inset 0 0 10px black;
-    width: 303px;
+    width: 23vw;
     font-size:17px;
-    text-align: center;
     color: white;
     outline: none;
 }
-.inlin
+.huys
 {
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
 }
