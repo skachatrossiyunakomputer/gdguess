@@ -10,7 +10,8 @@
 }
 .images
 {
-    background-color: rgb(32, 32, 32);
+    margin: 0 auto;
+    display: flex;
 }
 #mode {
     outline:none;
@@ -145,10 +146,11 @@ span
     border-color: rgb(71, 71, 71);
     height: 6vh;
     box-shadow: inset 0 0 10px black;
-    width: 23vw;
     font-size:17px;
     color: white;
     outline: none;
+    margin: 0 auto;
+    display: flex;
 }
 .huys
 {
