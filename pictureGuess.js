@@ -44,7 +44,7 @@ function check()
             }
             else
             {
-                alert("Неправильно");
+                console.log("neprawilno");
             }
             break;
         case "hard":
@@ -144,3 +144,7 @@ window.onresize = function(){
     document.getElementById("diff").style.borderRadius = document.documentElement.clientWidth/200+"px";
     document.getElementById("diff").style.borderWidth = document.documentElement.clientWidth/500+"px";
 }
+document.getElementById("levelInput").oninput = function(){
+    lineValue = document.getElementById("levelInput").value;
+    check();
+  };
