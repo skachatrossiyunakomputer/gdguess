@@ -35,7 +35,7 @@ function check()
     switch(hardest)
     {
         case "easy":
-            if(lineValue == easyar[rnd])
+            if(lineValue.toLowerCase() == easyar[rnd])
             {
                 count = count+0.5;
                 lineValue = "";
@@ -48,7 +48,7 @@ function check()
             }
             break;
         case "hard":
-            if(lineValue == hardar[rnd])
+            if(lineValue.toLowerCase() == hardar[rnd])
             {
                 count = count+1;
                 lineValue = "";
@@ -61,7 +61,7 @@ function check()
             }
             break;
         case "impossible":
-            if(lineValue == impossiblear[rnd])
+            if(lineValue.toLowerCase() == impossiblear[rnd])
             {
                 count = count+3;
                 lineValue = "";
