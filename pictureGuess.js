@@ -57,7 +57,7 @@ function check()
             }
             else
             {
-                alert("Неправильно");
+                console.log("neprawilno");
             }
             break;
         case "impossible":
@@ -70,7 +70,7 @@ function check()
             }
             else
             {
-                alert("Неправильно");
+                console.log("neprawilno");
             }
             break;
     }
