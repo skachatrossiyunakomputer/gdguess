@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" type="image/png" href="easy.png" id="fav" />
     <script type="text/javascript" src="array.js"></script>
-
     <link href="style.css" rel="stylesheet">
 </head>
 <body id="background" class="bg">
     <div class="selectable">
         <select id="mode">
-            <option value="selectMode" disabled>Выбор режима</option>
-            <option value="pictureGuess" selected>Угадай уровень по картинке</option>
-            <option value="nameGuess">Угадай уровень по названию</option>
+            <option id="selmd" value="selectMode" disabled>Выбор режима</option>
+            <option id="selpc" value="pictureGuess" selected>Угадай уровень по картинке</option>
+            <option id="selnm" value="nameGuess">Угадай уровень по названию</option>
         </select>
     </div>
     <iframe src="name.html" frameborder="0" id="fram" scrolling="no"></iframe>
@@ -27,5 +26,20 @@
         }
     </script>
     <script type="text/javascript" src="relocate.js"></script>
+    <script>
+        if(navigator.language == "ru-RU") {}
+        else
+        {    
+            document.getElementById("press").value = "Skip";
+            document.getElementById("diff").value = "Easy, Hard and Impossible.";
+            document.getElementById("ez").value = "Easy — very popular levels";
+            document.getElementById("hr").value = "Hard — less popular levels";
+            document.getElementById("ip").value = "Impossible — very unknown levels";
+            document.getElementById("ez").textContent = "Easy";
+            document.getElementById("hr").textContent = "Hard";
+            document.getElementById("ip").textContent = "Impossible";
+ 
+        }
+    </script>
 </body>
 </html>

@@ -184,7 +184,7 @@ let impossiblear = [ "impulse",
 ]
 let dir = "lvls/"
 let fmt = ".jpg";
-document.title = "Угадайка уровней Geometry Dash";
+document.title = "Geometry Dash Guess Level";
 function getRandomInt(min, max) 
 {
     min = Math.ceil(min);

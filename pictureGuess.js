@@ -13,19 +13,19 @@ function next()
             rnd = getRandomInt(0,easyar.length-1);
             img.src = dir+"easy/"+rnd+fmt;
             document.getElementById("levelInput").value = "";
-            console.log("Легко, "+easyar[rnd]);
+            console.log("easy, "+easyar[rnd]);
             break;
         case "hard":
             rnd = getRandomInt(0,hardar.length-1);
             document.getElementById("levelInput").value = "";
             img.src = dir+"hard/"+rnd+fmt;
-            console.log("Сложно, "+hardar[rnd]);
+            console.log("hard, "+hardar[rnd]);
             break;
         case "impossible":
             rnd = getRandomInt(0,impossiblear.length-1);
             document.getElementById("levelInput").value = "";
             img.src = dir+"impossible/"+rnd+fmt;
-            console.log("Невозможно, "+impossiblear[rnd]);
+            console.log("impossible, "+impossiblear[rnd]);
             break;
     }
 }
@@ -106,26 +106,26 @@ function skip()
 {
     if(count <= 0)
     {
-        alert("0 очков.")
+        alert("0.")
     }
     else
     {
         switch(hardest)
         {
             case "easy":
-                alert("Ответ: "+ easyar[rnd]);
+                alert(easyar[rnd]);
                 count = count - 0.5;
                 document.getElementById("levelInput").placeholder = count;
                 next();
                 break;
             case "hard":
-                alert("Ответ: "+ hardar[rnd]);
+                alert(hardar[rnd]);
                 count = count - 1;
                 document.getElementById("levelInput").placeholder = count;
                 next();
                 break;
             case "impossible":
-                alert("Ответ: "+ impossiblear[rnd]);
+                alert(impossiblear[rnd]);
                 count = count - 1;
                 document.getElementById("levelInput").placeholder = count;
                 next();

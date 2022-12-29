@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" src="array.js" type="module"></script>
+    <script src="lang.js" type="module"></script>
     <title>n</title>
 </head>
 <body>
@@ -14,11 +15,28 @@
     <input type="text" id="levelInput" value="" placeholder="Переход автоматический" maxlength="50" style="margin: 0 auto;display: flex;">
     <input type="button" id="press" value="Пропуск" onclick="skip()" style="margin: 0 auto;display: flex;"></input>
     <select style="margin: 0 auto;display: flex;" id="diff" title="Легко — эти уровни знают абсолютно все, даже далёкие от игры люди. Сложно — эти уровни знают те, кто больше 2 лет играет в игру. Невозможно — неизвестные никому демоны, которые расположены на 80 вкладках со всеми популярными изи демонами и представляют собой парашу из 1.5 ">
-    <option value="easy" title="Легко — эти уровни знают абсолютно все, даже далёкие от игры люди.">Легко</option>
-    <option value="hard" title="Сложно — эти уровни знают те, кто больше 2 лет играет в игру.">Сложно</option>
-    <option value="impossible" title="Невозможно — неизвестные никому демоны, которые расположены на 80 вкладках со всеми популярными изи демонами и представляют собой парашу из 1.5. Эти уровни ты сможешь отгадать, если когда-то фармил звёзды на изи демонах">Невозможно</option>
+    <option id="ez" value="easy" title="Легко — эти уровни знают абсолютно все, даже далёкие от игры люди.">Легко</option>
+    <option id="hr" value="hard" title="Сложно — эти уровни знают те, кто больше 2 лет играет в игру.">Сложно</option>
+    <option id="ip" value="impossible" title="Невозможно — неизвестные никому демоны, которые расположены на 80 вкладках со всеми популярными изи демонами и представляют собой парашу из 1.5. Эти уровни ты сможешь отгадать, если когда-то фармил звёзды на изи демонах">Невозможно</option>
     </select>
     <script type="text/javascript" src="pictureGuess.js"></script>
-
+    <script>
+        if(navigator.language == "ru-RU")
+        {    
+            console.log("already rus")
+        }
+        else
+        {    
+            document.getElementById("levelInput").placeholder = "Transition is automatic";
+            document.getElementById("press").value = "Skip";
+            document.getElementById("diff").value = "Easy, Hard and Impossible.";
+            document.getElementById("ez").value = "Easy — very popular levels";
+            document.getElementById("hr").value = "Hard — less popular levels";
+            document.getElementById("ip").value = "Impossible — very unknown levels";
+            document.getElementById("ez").textContent = "Easy";
+            document.getElementById("hr").textContent = "Hard";
+            document.getElementById("ip").textContent = "Impossible";
+        }
+    </script>
 </body>
 </html>
