@@ -1,3 +1,3 @@
-# gdguesslvl.github.io
-Угадайка уровней в Geometry Dash. Есть три режима: Угадай по картинке уровня, угадай уровень по названию и угадай по музыке. Последний вряд ли будет развит из-за авторских прав. 
-Поиграть можно здесь: https://skachatrossiyunakomputer.github.io/gdguess/
+# gdguesslvl
+Game, where you need to guess levels in Geometry Dash. There are two modes: Guess with picture and guess with name. <br>
+You can play this shit there: https://skachatrossiyunakomputer.github.io/gdguess/
