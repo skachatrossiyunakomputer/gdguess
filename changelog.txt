@@ -1,20 +1,22 @@
 1.0
-Всё создано. Изначально есть только отгадывание по картинке
 
 1.1
-Добавил режим "Отгадывание по названию" и заглушку отгадывания по музыке
+Added mode "Guess by name"
 
 1.2
-Немножко переписал код и добавил режим отгадай уровень по музыке
+Rewrote code a little and added mode "Guess by music"
 
 1.3
-Обновил дизайн, он теперь тёмный, теперь переключение между режимами идёт через iFrame
+Updated design, it is dark now, now switching between modes going on across iFrame
 
 1.4 
-Переделал вёрстку, теперь сайт смотрится нормально на телефонах
+Remade the layout, in theory the site is looks ok on phones
 
 1.5
-Теперь, если в строке уровень введён правильно, то нажимать Enter не нужно, переход на следующий уровень произойдёт автоматически. Это сделано потому, что на телефонах нет клавиши Enter.
+Now, if the level is entered correctly in the line, then you do not need to press Enter, the transition to the next level will occur automatically. This is because there is no Enter key on phones.
 
 1.5.1
-Теперь независимо от регистра.
+Fixed bug
+
+1.6
+Added english language
