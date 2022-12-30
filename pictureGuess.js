@@ -44,7 +44,6 @@ function check()
             }
             else
             {
-                console.log("neprawilno");
             }
             break;
         case "hard":
@@ -57,7 +56,6 @@ function check()
             }
             else
             {
-                console.log("neprawilno");
             }
             break;
         case "impossible":
@@ -70,7 +68,6 @@ function check()
             }
             else
             {
-                console.log("neprawilno");
             }
             break;
     }
@@ -106,7 +103,14 @@ function skip()
 {
     if(count <= 0)
     {
-        alert("0.")
+        if(navigator.language=="ru-RU")
+        {
+            alert("0 очков!");
+        }
+        else
+        {
+            alert("0 points!");
+        }
     }
     else
     {

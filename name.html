@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" src="array.js" type="module"></script>
-    <script src="lang.js" type="module"></script>
     <title>n</title>
 </head>
 <body>
@@ -29,10 +28,10 @@
         {    
             document.getElementById("levelInput").placeholder = "Transition is automatic";
             document.getElementById("press").value = "Skip";
-            document.getElementById("diff").value = "Easy, Hard and Impossible.";
-            document.getElementById("ez").value = "Easy — very popular levels";
-            document.getElementById("hr").value = "Hard — less popular levels";
-            document.getElementById("ip").value = "Impossible — very unknown levels";
+            document.getElementById("diff").title = "Easy, Hard and Impossible.";
+            document.getElementById("ez").title = "Easy — very popular levels";
+            document.getElementById("hr").title = "Hard — less popular levels";
+            document.getElementById("ip").title = "Impossible — very unknown levels";
             document.getElementById("ez").textContent = "Easy";
             document.getElementById("hr").textContent = "Hard";
             document.getElementById("ip").textContent = "Impossible";

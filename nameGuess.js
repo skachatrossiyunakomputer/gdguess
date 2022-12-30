@@ -62,7 +62,3 @@ function checkVariant(variant)
     }
 }
 
-if (document.title == "Угадайка по музыке")
-{
-    console.log("huy")
-}
